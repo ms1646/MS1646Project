@@ -6,8 +6,8 @@ from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 try:
    #boto3
-   sqs = boto3.resource('sqs',aws_access_key_id =  'AKIAWNKTUM4AQA7BEMV6',
-                        aws_secret_access_key = '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')
+   sqs = boto3.resource('sqs',aws_access_key_id =  '',
+                        aws_secret_access_key = '')
    queue = sqs.create_queue(QueueName='ms1646', Attributes={'DelaySeconds': '5'})
 
    #connecting to postgis
